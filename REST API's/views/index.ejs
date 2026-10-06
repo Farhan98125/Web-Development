@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Quora posts</h1>
+    <!-- here we use our arrays data to show it on page-->
+     <% for(post of posts) { %>
+         <div class="post">
+             <h2 class="username"><%= post.username %></h2>
+             <p class="content"><%= post.content %></p>
+             <br>
+             <a href="http://localhost:8080/posts/<%= post.id %>">See in Details</a>
+             <!-- to make an edit button so that we can do changes in post -->
+              <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit Post</a>
+                <!-- to make a delete button so that we can delete a post -->
+                <form action="/posts/<%= post.id %>?_method=DELETE" method="post" style="display:inline">
+                    <button type="submit">Delete Post</button>
+                </form>
+         </div>
+     <% } %>
+     <!-- we can add new posts by clicking here -->
+     <a href="http://localhost:8080/posts/new">Create New Post</a>
+</body>
+</html>

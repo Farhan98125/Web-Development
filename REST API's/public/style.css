@@ -1,0 +1,19 @@
+h1{
+    color: rgb(19, 121, 43);
+}
+
+.post {
+    border: 1px solid #190606;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: rgb(202, 20, 208);
+}
+
+.content {
+    color: rgb(121, 17, 17);
+    background-color: #f3f2f5;
+}

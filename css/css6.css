@@ -1,0 +1,144 @@
+/* .container{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(160, 190, 8);
+    /* display: flex; */
+    /* display: grid; */
+    /* grid-template-rows:50px 50px 50px 50px; */
+    /* grid-template-columns:100px 100px; */
+    /* grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px; */
+    
+
+/* }
+.items{
+    /* height: 50px;
+    width: 100px; */
+    /* background-color: rgb(24, 222, 136);
+    border: 2px solid red;
+    text-align: center; */
+/* }
+.one{ */ 
+    /* to take over the lines from starting to given line  */
+    /* grid-column: 1/4; short cut */
+    /* grid-row-start:1 ;
+    grid-row-end: 3;
+    
+} */
+ 
+/* ANIMATIONS */
+/* .box{
+    height: 100px;
+    width: 300px; */
+    /* background-color: pink;
+   animation-name: farhan;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count:infinite ;
+    animation-direction:alternate ;    */
+    /* shortcut */
+    /* animation: farhan 2s ease-in 0s infinite alternate; */
+/* } */
+
+/* @keyframes farhan{ */
+    /* for multiple animations on a singke time  */
+    /* 0%{font-size: 20px;
+        color: rebeccapurple;
+        background-color: gray;
+        width: 10px;
+    }
+    50%{
+        font-size: 40px;
+        color: rgb(113, 132, 113);
+        background-color: rgb(5, 5, 15);
+        width: 400px;
+        /* border-radius: 50%; */
+    /* }
+    100%{
+        font-size: 10px;
+        color: rgb(97, 228, 97);
+        background-color: rgb(2, 2, 10);
+        width: 200px;
+    }
+    
+} */ 
+
+/* MEDIA QUERIES  ---->> to make websitw reponsive */
+
+ /* h1{
+ background-color:yellow ;
+ border: 2px solid rebeccapurple;
+} */
+/* @media (width: 400px){
+    h1{
+        background-color: red;
+        color: green;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        border: 2px solid red;
+    }
+} */ 
+ /* @media (min-width: 500px)  {
+    h1{
+        background-color: rebeccapurple;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        border: 2px solid red;
+    }
+ }
+    
+ @media (max-width: 600px){
+    h1{
+        background-color: rgb(16, 7, 25);
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        border: 2px solid red;
+    }
+ } */
+  /* @media (min-width:200px)and(max-width:300px){
+   h1{
+    background-color: rgb(135, 123, 123);
+   }
+  } */
+   /* @media(orientation:landscape){
+    h1{
+       background-color: rgb(130, 152, 220);
+       color: rgb(160, 114, 46); 
+    }
+   } */
+
+
+   /* z- index  */
+   /* to apply the x -index the position must nto be static  */
+   .box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+    
+   }
+   .one{
+    background-color: rebeccapurple;
+    /* position: static; z-index not work here */
+    position: relative;
+    z-index:1; ;
+   }
+   .two{
+    background-color: rgb(68, 232, 36);
+    position: relative;
+    bottom: 50px;
+    z-index:-1;
+   }
+

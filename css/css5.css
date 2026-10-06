@@ -1,0 +1,51 @@
+#container{
+    height: 200px;
+    width: 500px;
+    background-color: green;
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    /* flex-direction: row-reverse; */
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly;  all side equal sidde */
+
+    /* flex wrap */
+    /* flex-wrap: nowrap; we try to fit that particular line */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse;  */
+    /* align-items: baseline;  it align the all boexes text in a line no matter about the boxex */
+
+    /* align-content: flex-start; */
+    /* align-content: space-evenly; */
+
+    /* to align the single elemetns / individual  */
+}
+.box{
+    
+    
+    width: 50px;
+    height: 50px;
+    /* margin: 10px auto; */
+    border: 2px solid rebeccapurple;
+    background-color: orange;
+    flex-shrink: 3;
+
+    
+}
+.box1{
+    
+    
+    width: 50px;
+    height: 50px;
+    /* margin: 10px auto; */
+    border: 2px solid rebeccapurple;
+    background-color: rgb(0, 0, 0);
+    /* align-self: flex-start; */
+    /* flex-basis: 100px;  to increse and decrese the size of the particular box */
+    /* align-self: center;  to align in the centre of the container */
+    /* flex grow works if empty space is left in row or colum in which dir you want to grow */
+    /* flex-grow: 4;   */
+    /* flex-shrink: 3; */
+}

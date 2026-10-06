@@ -1,0 +1,97 @@
+/* .box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    background-color: rgba(134, 70, 70, 0.749);
+    /* opacity: 0.2; */
+/* } */
+
+/* transitions property */
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* transition-duration: 1s;
+    /* transition-delay: 1s; */
+    /* transition: ease-in 0.2s;
+     */
+    
+/* } */  
+/* div:hover{
+     background-color: blue;
+    border-radius: 50%;
+    margin-top: 400px;
+}  */
+
+/* transform means rotates scale,skew an elements  */
+/* div{
+    height: 100px;
+    width: 100px;
+    margin: 5%;
+    background-color: green; */
+    /* transform: rotate(45deg); */
+    /* transform: scale(0.5,); */
+    /* transform: translate(100px); */
+    /* transform: skew(40deg); */
+    /* in single for all properties in a single frame */
+    /* transform: rotate(30deg) translate(100PX) skew(40deg); */
+/* } */
+
+/* box-shadow */
+/* div{
+    height: 100px;
+    width: 100px;
+    margin: 5%;
+    background-color: green;
+    box-shadow: 2px 2px 5px rgb(192, 18, 59);
+} */
+
+/* bcg img  */
+
+/* div{
+    height: 200px;
+    width: 500px;
+    background-color: blanchedalmond;
+    margin: 10px auto;
+    background-image: url('https://picsum.photos/200/300');
+    background-size: cover;
+} */
+
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid rebeccapurple;
+    margin: 20px;
+    display: inline-block;
+} */
+/* #static{
+    background-color: yellow; */
+    /* position: static; no change  */
+    /* position: relative; chanhe */
+    /* position:absolute; */
+    /* position: fixed; position not change on scrolling the page ; */
+    /* left: 100px;
+    top: 100px;
+} */
+
+/* smiley face */
+.face{
+    height: 400px;
+    width: 400px;
+    background-color: #ffa511;
+    border-radius: 50%;
+}
+.mouth{
+    height: 80px;
+    width: 75px;
+    background-color: brown;
+    
+    border-radius: 0 0 50px 50px;
+    position:absolute;
+    top: 250px;
+    left: 150px;
+}

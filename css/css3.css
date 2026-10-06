@@ -1,0 +1,43 @@
+div{
+    height: 200px;
+    width: 400px;
+    background-color: antiquewhite;
+    border: 5px solid rgb(46, 31, 31);
+    /* border-right:5px solid rebeccapurple;
+    border-left: 5px dotted rgb(18, 18, 3); */
+    /* border-radius: 50%;   to make the circle*/
+    /* border-top-left-radius: 30px; */
+
+    /* padding and margin */
+      padding-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+    
+      /* margin */
+      margin: 50px;
+      /* margin-top: 40px; */
+}
+h1{
+    border: 5px solid rebeccapurple;
+    border-style: dotted;
+    border-radius: 30px;
+}
+button{
+    background-color: rgb(218, 125, 12);
+    /* border: 2px solid rebeccapurple;
+    padding-left: 5px;
+    padding-right: 5px; */
+    padding: 25px;
+    margin: 50px;
+}
+
+/* display  */
+/* display=inline block used to give the height width margin top bottom in inline or block elements  */
+h2{
+    display: inline;
+    background-color: red;
+}
+span{
+    display: block;
+    background-color: green;
+}

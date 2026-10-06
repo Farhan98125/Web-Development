@@ -1,0 +1,89 @@
+/* universal selector apply at all  */
+* {
+    /* font-family: 'Courier New'; */
+    /* background-color: red; */
+}
+
+/* element */
+h1,
+h3 {
+    color: red;
+}
+
+/* id */
+#login,
+#signup {
+    color: green;
+    background-color: red;
+}
+
+/* class */
+.follow {
+    color: orange;
+    background-color: red;
+}
+
+/* sibling combinator */
+p+h3 {
+    color: rgb(84, 84, 95);
+    text-decoration: underline;
+}
+
+/* child combinator   -- direct after the span  */
+span>button {
+    color: orange;
+    background-color: rgb(1, 28, 19);
+}
+
+/* attributes selector   -- value pair*/
+input[type="text"] {
+    color: rgb(255, 244, 247);
+    background-color: black;
+}
+
+input[type="password"] {
+    color: green;
+    background-color: black;
+}
+
+/* for all the types present in the code */
+input[type] {
+    color: red;
+}
+
+/* pseudo class -- hovver */
+button:hover {
+    background-color: rgb(247, 0, 0);
+    color: white;
+
+}
+
+h3:hover {
+    text-decoration: overline;
+}
+
+/* active on click colour change */
+button:active {
+    background-color: rgb(0, 0, 0);
+}
+
+h3:active {
+    color: red;
+}
+
+/* pseudo elements :: */
+/* first letter of any elements */
+h1::first-letter {
+    color: green;
+}
+
+p::first-line {
+    color: red;
+}
+
+/* selection */
+p::selection {
+    background-color: burlywood;
+}
+
+/* inheriance to iherit the parent prop .input and button does not supports dirctly */

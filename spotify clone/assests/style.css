@@ -1,0 +1,278 @@
+body{
+    background-color:#000;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    /* this chanage in inline   align in same line*/
+    display: flex;  
+     /*veiwport height which takes all display height   */
+    height: 100vh;
+    /* to give some space from all sides */
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: red;
+    /* this width is seen by website  */
+    width: 340px;
+    border-radius: 1rem;
+    background-color: #000;
+    margin: 0.5rem;
+}
+.main-content{
+    background-color: #a18e8e;
+    /* it will takes all the position left that means main class takes all remaining part  */
+    flex:1;
+    /* autometic comes when large data */
+    overflow: auto;
+    background-color: #121212;
+    /* to give some space from left of the card */
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: yellow;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    /* set the music in bottom */
+    bottom: 0;
+    background-color: #000;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    height: 100px;
+    background-color: #121212;
+    border-radius: 1rem;
+    /* display fles se row -col and col into row */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    /* this give the gap in between */
+    line-height: 40px;
+    opacity: 0.7;  
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i {
+    font-size: 1.25rem;
+}
+.nav-option a {
+font-size: 1rem;
+margin: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    /* height takes all the remaining height  */
+    height: 100%;
+    margin-top: 0.5rem;
+    padding:0.5rem 0.75rem ;
+    
+}
+.options{
+    display: flex;
+    /* it seprates the img and icons si to ei */
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height:1.25rem ;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+    
+}
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity:0.9 ;
+}
+.badge{
+    background-color: #fff;
+border: none;
+border-radius:100px ;
+padding: 0.25rem 1rem;
+font-weight: 700;
+margin-top: 0.5rem;
+height: 2rem;
+width: fit-content;
+}
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+
+}
+.sticky-nav{
+    /* so that nav does not move */
+    position: sticky;
+    top: 0;
+    background-color: #232323;
+    display: flex;
+    /* to shift the content end to end */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    /* z index so that the content of any cards does not overlep  */
+    z-index: 10;
+}
+.sticky-nav-icons {
+   margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+
+@media (max-width:1000px){
+.hide{
+    display: none;
+   }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container{
+    /* to ligh all containers in a single row */
+    display: flex;
+    /* if we have multiple cards and we want that cards takes next line */
+flex-wrap:wrap;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-tittle{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+    /* background-color: red; */
+}
+
+.player{
+    width: 50%;
+    
+    /* background-color: rgb(201, 168, 168); */
+}
+
+.controls{
+    width: 25%;
+    /* background-color: orange; */
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    /* appreance means which comes with  to remove */
+    appearance: none;
+    background-color: transparent;
+    /* give hand symbol */
+    cursor: pointer;
+}
+
+/* to change the slider track and thump */
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #1bd;
+    /* convert square into circle for thumb */
+    border-radius: 50%;
+    /* - shift up */
+    margin-top: -3px;
+}
+

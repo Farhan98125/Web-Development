@@ -1,0 +1,38 @@
+<!--  new template created here we pass all our data to this file
+ this is ejs file .used as frontend -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is the templete of our web page -->
+    <h3>All Chats</h3>
+
+    <!-- here we create a new chat or button , when we click this btn ne chat will open and we can add the msg and after
+     that this msg will post as a new chat -->
+     
+     <form method="GET" action="/chats/new">
+        <button>new chat</button>
+     </form>
+
+
+
+    <!-- here we will show all the chats -->
+    <% for(let chat of chats){ %>
+    <div class="chat">
+        <p>From: <i> <%=chat.from %> </i> </p>
+        <div class="msg">
+            <p> <%=chat.msg %></p>
+        </div>
+        <p> Received by <i><%=chat.to %></i></p>
+        <hr>
+    </div>
+    <br /> <br />
+<% } %>
+
+</body>
+</html>
